@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200,;0,300;0,600;0,800;1,400&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+li:hover::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #2a68ff;
+  bottom: -10px;
+  right: 0;
+  color: #2a68ff;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+/* .card{
+  background: #000;
+} */
